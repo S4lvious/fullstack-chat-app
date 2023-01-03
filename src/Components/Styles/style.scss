@@ -66,7 +66,6 @@
     align-items: center;
     justify-content: center;
     .chatContainer{
-        border: 1px solid white;
         border-radius: 10px;
         width: 65%;
         height: 80%;
@@ -157,6 +156,39 @@
          }
         .chat{
             flex: 2;
+
+            .chatinfo{
+                background-color: #5d5b8d;
+                display: flex;
+                height: 50px;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+                color: lightgrey;
+                .chaticons{
+                    display: flex;
+                    gap: 10px;
+
+                    img{
+                        height: 24px;
+                        cursor: pointer;
+                    }
+                } 
+            }
+
+            .messages{
+                background-color:#ddddf7;
+                padding: 10px;
+                height: calc(100% - 160px);
+                
+            }   
+            .input{
+                height: 50px;
+                background-color: white;
+                padding: 10px;
+            }
+
+
         }
     }
 }
