@@ -12,6 +12,19 @@ const Message = ({ message }) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   }, [message]);
 
+  const convertTimestamp = (timestamp) => {
+    let date = timestamp.toDate();
+    let day = date.getDay();
+    let mounth = date.getMonth();
+    let hh = date.getHours();
+    let mm = date.getMinutes();
+    let year = date.getFullYear();
+  
+    date = "alle " + hh + ":" + mm + " il " + day + "/" + mounth+1 + "/" + year ;
+    console.log(mounth)
+    return date;
+  }
+
   return (
     <div
       ref={ref}
@@ -26,7 +39,7 @@ const Message = ({ message }) => {
           }
           alt=""
         />
-        <span>Adesso</span>
+        <span>{convertTimestamp(message.date)}</span>
       </div>
       <div className="messageContent">
         <p>{message.text}</p>
