@@ -13,3 +13,6 @@ Fonti per la creazione dell'applicativo.
 Documentazione di Firebase
 Documentazione di React
 Alcuni tutorial su youtube
+
+
+E' possibile creare un account e visualizzare l'applicativo funzionante all'indirizzo: https://fullstack-chat-app.onrender.com/login
